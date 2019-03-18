@@ -1,0 +1,96 @@
+body {
+	overflow-x: hidden;
+		background-color: #eddab9;
+}
+
+#textbox1 {
+	position: absolute;
+	right: 10%;
+	bottom: 15%;
+	width: 30%;
+	overflow: auto;
+	background-color: #5f2c28;
+	padding: 1.5rem;
+	color: #eddab9;
+}
+
+#block1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 2% 0 2% 0;
+	box-sizing: border-box;
+	background-image: url('../images/tablecloth.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+}
+#block2 {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 2% 0 2% 0;
+	box-sizing: border-box;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+}
+
+#block3 {
+	background-image: url('../images/table.png');
+	background-attachment: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	width: 100%;
+	height: 130%;
+	position: absolute;
+	top: 270%;
+	left: 0;
+}
+
+
+
+#block4 {
+	margin: 0;
+	width: 100%;
+	height: 170%;
+	position: absolute;
+	top: 420%;
+	left: 0;
+}
+
+#fork {
+	position: absolute;
+	right: 0;
+	bottom: 5%;
+	width: 9rem;
+	transform: rotate(-50deg);
+}
+
+#knife {
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	width: 7rem;
+	transform: rotate(30deg);
+}
+
+#spoon {
+	position: absolute;
+	right: 0;
+	bottom: 40%;
+	width: 9rem;
+	transform: rotate(-30deg);
+}
+
+#door {
+	position: absolute;
+	right: 0;
+	bottom: 5%;
+	width: 35rem;
+}

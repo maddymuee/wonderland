@@ -1,0 +1,238 @@
+body {
+	background-color: #eddab9;
+	}
+	#textbox1 {
+	position: absolute;
+	left: 10%;
+	top: 30%;
+	width: 25%;
+	padding: 1.5rem;
+}
+
+#textbox2 {
+	position: absolute;
+	right: 10%;
+	top: 70%;
+	width: 25%;
+	padding: 1.5rem;
+}
+
+#textbox3 {
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	width: 30%;
+	line-height: 0;
+	margin-left: -15%;
+	text-align: center;
+	font-size: 5rem;
+	color: #eddab9;
+}
+
+
+#block1 {
+	margin: 0;
+	width: 100%;
+	height: 330%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: #eddab9;
+}
+
+
+
+
+#block2 {
+	margin: 0;
+	width: 100%;
+	height: 720%;
+	position: absolute;
+	top: 280%;
+	left: 0;
+	z-index: 4;
+}
+
+#block2halftone {
+	margin: 0;
+	width: 100%;
+	height: 500%;
+	position: absolute;
+	top: 380%;
+	left: 0;
+	z-index: 4;
+	background-image: url('../images/halftone2.png');
+	background-size: 100% auto;
+	background-attachment: absolute;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+#block2bg {
+	background-image: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-blend-mode: overlay;
+	margin: 0;
+	width: 100%;
+	height: 600%;
+	position: absolute;
+	top: 380%;
+	left: 0;
+	z-index: 2;
+}
+
+#block3 {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 970%;
+	left: 0;
+	background-image: url('../images/halftone3.png');
+	background-size: 100% auto;
+	background-attachment: absolute;
+	background-position: top left;
+	background-repeat: no-repeat;
+	z-index: 4;
+	padding-top: 10rem;
+}
+
+
+.peeking {
+	float: left;
+	width: 15rem;
+	margin-left: -30%;
+	margin-right: 40px;
+}
+
+.rabbit {
+	width: 30rem;
+	float: right;
+	margin-right: -30%;
+	margin-left: 40px;
+
+}
+
+
+
+#alice {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 20%;
+	margin: 5rem auto 25rem auto;
+	display: block;
+	width: 20rem;
+
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating1 {
+    -webkit-animation: rotating 10s linear infinite;
+}
+.rotating2 {
+    -webkit-animation: rotating 20s linear infinite;
+}
+
+#cabinet {
+	position: absolute;
+	top: 55%;
+	left: 5%;
+	width: 25rem;
+}
+
+
+#table {
+	position: absolute;
+	top: 25%;
+	right: 7%;
+	width: 15rem;
+}
+
+#clock {
+	position: absolute;
+	top: 35%;
+	right: 15%;
+	width: 20rem;
+}
+
+#flowers {
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 5rem;
+}
+
+#alice2 {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	width: 8rem;
+}
+
+#drinkme {
+	position: absolute;
+	bottom: 10%;
+	left: 25%;
+	width: 4rem;
+	cursor: pointer;
+}
+
+
+#door {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	width: 6rem;
+	z-index: 3;
+}
+
+#doorbg {
+	position: absolute;
+	bottom: 10%;
+	right: 8%;
+	width: 20rem;
+	z-index: 1;
+}
+
+.smaller {
+	transform: scale(.4);
+	transform-origin: bottom center;
+	transition: 2s;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.thump {
+	font-size: 5rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#rabbit2 {
+	width: 30rem;
+}
+
+#grass {
+	width: 20rem;
+	height: auto;
+}
+
+.firstcharacter {
+  font-family: 'Montesserat', sans-serif;
+  color: #688f98;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 5px;
+}

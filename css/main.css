@@ -1,0 +1,158 @@
+body {
+	font-family: 'Crimson Text', serif;
+	font-size: 23px;
+	line-height: 2rem;
+	font-weight: lighter;
+	color: #3e2917;
+
+}
+
+a {
+	font-size: 3rem;
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999999;
+}
+
+.blocktext {
+	display: block;
+    margin: 5rem auto 0 auto;
+    width: 40%;
+    z-index: 400;
+}
+
+.blocktextleft {
+	display: block;
+    margin: 5rem 0 0 10rem;
+    width: 40%;
+    z-index: 400;
+}
+
+.blocktextright {
+	display: block;
+    margin: 5rem 0 0 40%;
+    width: 40%;
+    z-index: 400;
+}
+
+.blocktextfarright {
+	display: block;
+    margin: 5rem 0 0 50%;
+    width: 40%;
+    z-index: 400;
+}
+
+.blocktext2 {
+	position: absolute;
+	left: 50%;
+	top: 5rem;
+    margin-left: -23%;
+    width: 46%;
+    z-index: 400;
+}
+
+.imageleft {
+	width: 50%;
+	float: left;
+	margin-left: -25%;
+	margin-right: 4%;
+}
+
+.imageright {
+	width: 50%;
+	float: right;
+	margin-right: -25%;
+	margin-left: 4%;
+}
+
+h1 {
+	color: #688f98;
+	font-weight: bold;
+	/*font-size: 10rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	line-height: 7rem;
+	font-family: 'Abril Fatface', cursive;*/
+}
+h2 {
+	font-weight: lighter;
+	font-size: 2.3rem;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 20rem;
+	line-height: 7rem;
+	text-transform: uppercase;
+	font-family: 'Montesserat', sans-serif;
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: 2rem;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 20rem;
+	line-height: 7rem;
+	text-transform: uppercase;
+	font-family: 'Montesserat', sans-serif;
+	margin-top: 0;
+}
+
+
+h4 {
+	font-weight: lighter;
+	font-size: 1.6rem;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 20rem;
+	line-height: 4rem;
+	text-transform: uppercase;
+	font-family: 'Montesserat', sans-serif;
+	margin-top: 0;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	padding: 1rem;
+	font-size: 3rem;
+	color: red;
+	background-color: white;
+}
+
+#nav a, #nav span {
+	margin: 0 2rem 0 2rem;
+}
+
+.header {
+	width: 150%;
+	margin-left: -25%;
+	margin-top: 20%;
+}
+
+.header img {
+	width: 80%;
+}
+
+
+.smallbottom {
+	margin-bottom: 100px;
+}
+
+.bigbottom {
+	margin-bottom: 300px;
+}
+
+.bigtop {
+	margin-top: 30rem;
+}
+
+
+.pointer {
+	cursor: pointer;
+}

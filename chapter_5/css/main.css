@@ -1,0 +1,77 @@
+body {
+		background-color: #eddab9;
+
+		}
+#textbox1 {
+	position: absolute;
+	right: 10%;
+	bottom: 15%;
+	width: 30%;
+	overflow: auto;
+	background-color: #ffffff;
+	padding: 1.5rem;
+}
+
+
+#block1 {
+	background-image: url('../images/footsteps.png');
+	background-attachment: absolute;
+	background-size: 100% 40%;
+	background-repeat: no-repeat;
+	margin: 0;
+	width: 100%;
+	height: 210%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#block2 {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 210%;
+	left: 0;
+	background-color: #c7ab3e;
+}
+
+
+
+#block3 {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 320%;
+	left: 0;
+}
+
+#royals {
+	width: 40%;
+	position: absolute;
+	bottom: 30%;
+	left: -5%;
+}
+
+#alice {
+	width: 6%;
+	right: 7%;
+	bottom: 30%;
+	position: absolute;
+}
+
+#aliceflamingo {
+	width: 40%;
+	position: absolute;
+	right: 5%;
+	top: -10%;
+}
+
+#rabbit {
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	width: 30%;
+}
+
