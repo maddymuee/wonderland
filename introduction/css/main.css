@@ -1,15 +1,56 @@
 body {
 		background-color: #85b4be;
+		cursor: pointer;
 }
 
 	#textbox1 {
 	position: absolute;
-	right: 10%;
-	bottom: 15%;
+	left: 50%;
+	top: 20%;
+	margin-left: -15%;
 	width: 30%;
-	overflow: auto;
+}
 
-	padding: 1.5rem;
+.fadeout {
+	-webkit-animation: fadeout 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 3s; /* Firefox < 16 */
+        -ms-animation: fadeout 3s; /* Internet Explorer */
+         -o-animation: fadeout 3s; /* Opera < 12.1 */
+            animation: fadeout 3s;
+}
+
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#title {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -35%;
+	width: 70%;
+}
+
+
+.fadein {
+	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #block1 {
@@ -21,33 +62,6 @@ body {
 	left: 0;
 }
 
-#block2 {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 100%;
-	left: 0;
-}
-
-#block3 {
-	background-image: url('../images/full2.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 200%;
-	left: 0;
-}
-
-#block4 {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 300%;
-	left: 0;
+.hidden {
+	visibility: hidden;
 }

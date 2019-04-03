@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-	$('#a1').on('click', function(){
-        $('#text').html('<p>This was not an encouraging opening for a conversation. Alice replied, rather shyly, I — I hardly know, sir, just at present — at least I know who I WAS when I got up this morning, but I think I must have been changed several times since then.</p><p><center><a href="#" id="a2">→</a></center></p>');
-    }
-    );
+	$(window).load(function(){
+     setTimeout(function() {
+          $('#knife').addClass('rotate1');
+    }, 1500);
 
-    $('#a2').on('click', function(){
-        $('#text').html('blarg');
-    }
-    );
+     setTimeout(function() {
+          $('#spoon').addClass('rotate2');
+    }, 1300);
 
-    $('#alice').on('click', function(){
-        $(this).addClass('grow');
-    }
-    );
+     setTimeout(function() {
+          $('#fork').addClass('rotate3');
+    }, 1400);
+ });
 
 });
+       

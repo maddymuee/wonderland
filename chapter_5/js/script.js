@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
-	$('#a1').on('click', function(){
-        $('#text').html('<p>This was not an encouraging opening for a conversation. Alice replied, rather shyly, I — I hardly know, sir, just at present — at least I know who I WAS when I got up this morning, but I think I must have been changed several times since then.</p><p><center><a href="#" id="a2">→</a></center></p>');
-    }
-    );
+
+let clicked = false;
+	$('#aliceflamingo').click(function(){
+        if (clicked === false) {
+        $(this).attr('src', 'images/flamingo2.png');
+        clicked = true;
+    } else {
+        $(this).attr('src', 'images/alice_flamingo.png');
+        clicked = false;
+    };
+});
 
     $('#a2').on('click', function(){
         $('#text').html('blarg');

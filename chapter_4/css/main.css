@@ -22,18 +22,14 @@ body {
 	height: 100%;
 	padding: 2% 0 2% 0;
 	box-sizing: border-box;
-	background-image: url('../images/tablecloth.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
 
 }
 #block2 {
 	position: absolute;
-	top: 70%;
+	top: 80%;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 2% 0 2% 0;
 	box-sizing: border-box;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -41,16 +37,20 @@ body {
 }
 
 #block3 {
-	background-image: url('../images/table.png');
-	background-attachment: absolute;
-	background-size: cover;
-	background-repeat: no-repeat;
 	margin: 0;
 	width: 100%;
-	height: 130%;
+	height: 140%;
 	position: absolute;
-	top: 270%;
+	top: 300%;
 	left: 0;
+}
+
+#table {
+	width: 80%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -40%;
 }
 
 
@@ -60,37 +60,110 @@ body {
 	width: 100%;
 	height: 170%;
 	position: absolute;
-	top: 420%;
+	top: 500%;
 	left: 0;
 }
 
 #fork {
 	position: absolute;
-	right: 0;
-	bottom: 5%;
-	width: 9rem;
-	transform: rotate(-50deg);
+	right: -15%;
+	top: 30%;
+	width: 10%;
+	z-index: 2;
+	-moz-transition: 800ms ease-in-out;
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
+  transform-origin: bottom left;
+}
+
+.rotate3 {
+    -moz-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
 }
 
 #knife {
 	position: absolute;
-	left: 5%;
-	top: 10%;
-	width: 7rem;
-	transform: rotate(30deg);
+	left: -10%;
+	top: -5%;
+	width: 8%;
+	z-index: 2;
+	-moz-transition: 800ms ease-in-out;
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
+  transform-origin: bottom left;
+}
+
+.rotate1 {
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
 }
 
 #spoon {
 	position: absolute;
-	right: 0;
-	bottom: 40%;
-	width: 9rem;
-	transform: rotate(-30deg);
+	right: -10%;
+	top: 5%;
+	width: 10%;
+	z-index: 2;
+	-moz-transition: 800ms ease-in-out;
+  -webkit-transition: 800ms ease-in-out;
+  transition: 800ms ease-in-out;
+  transform-origin: bottom left;
 }
+
+.rotate2 {
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+ }
 
 #door {
 	position: absolute;
 	right: 0;
 	bottom: 5%;
 	width: 35rem;
+}
+
+
+#tablecloth {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+/*---WHAT??---*/
+
+.tablecloth {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.ch4header {
+	position: absolute;
+	top: 30%;
+	width: 46%;
+	left: 50%;
+	margin-left: -23%;
+}
+
+.ch4header img {
+	width: 100%;
+}
+
+
+#gate {
+	width: 50%;
+	left: 50%;
+	bottom: 5%;
+	margin-left: -25%;
+	position: absolute;
 }

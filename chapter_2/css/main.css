@@ -10,7 +10,7 @@ html, body, .viewport {
 #textbox1 {
 	position: absolute;
 	right: 22%;
-	bottom: -5%;
+	bottom: -3%;
 	width: 30%;
 	overflow: auto;
 	z-index: 5;

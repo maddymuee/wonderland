@@ -1,18 +1,34 @@
 $(document).ready(function(){
 
-	$('#a1').on('click', function(){
-        $('#text').html('<p>This was not an encouraging opening for a conversation. Alice replied, rather shyly, I — I hardly know, sir, just at present — at least I know who I WAS when I got up this morning, but I think I must have been changed several times since then.</p><p><center><a href="#" id="a2">→</a></center></p>');
-    }
-    );
+	$("#block3").mousemove(function(e) {
+  parallaxIt(e, "#cards", -70);
+  parallaxIt(e, "#cards2", -60);
+  parallaxIt(e, "#cards3", -50);
+  parallaxIt(e, "#yarg", -40);
+  parallaxIt(e, "#cards4", -30);
+  parallaxIt(e, "#cards5", -20);
+});
 
-    $('#a2').on('click', function(){
-        $('#text').html('blarg');
-    }
-    );
+function parallaxIt(e, target, movement) {
+  var $this = $("#block3");
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
 
-    $('#alice').on('click', function(){
-        $(this).addClass('grow');
-    }
-    );
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * movement,
+    y: (relY - $this.height() / 2) / $this.height() * movement
+  });
+}
+
+let clicked = false;
+  $('#alice').click(function(){
+        if (clicked === false) {
+        $(this).attr('src', 'images/awake.gif');
+        setTimeout(function() {
+      window.location = "../epilogue/index.html";
+      }, 3000);
+        clicked = true;
+    };
+});
 
 });

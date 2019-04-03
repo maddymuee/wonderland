@@ -1,20 +1,21 @@
 body {
 	background-color: #eddab9;
+	overflow-x: hidden;
 	}
-	#textbox1 {
+#textbox1 {
 	position: absolute;
 	left: 10%;
 	top: 30%;
-	width: 25%;
-	padding: 1.5rem;
+	width: 30%;
+	color: #eddab9;
 }
 
 #textbox2 {
 	position: absolute;
 	right: 10%;
 	top: 70%;
-	width: 25%;
-	padding: 1.5rem;
+	width: 30%;
+	color: #eddab9;
 }
 
 #textbox3 {
@@ -22,10 +23,12 @@ body {
 	bottom: 5rem;
 	left: 50%;
 	width: 30%;
-	line-height: 0;
 	margin-left: -15%;
+	font-size: 3rem;
+	letter-spacing: 3px;
 	text-align: center;
-	font-size: 5rem;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 	color: #eddab9;
 }
 
@@ -47,9 +50,19 @@ body {
 #block2 {
 	margin: 0;
 	width: 100%;
-	height: 720%;
+	height: 100%;
 	position: absolute;
-	top: 280%;
+	top: 80%;
+	left: 0;
+	z-index: 4;
+}
+
+#block3 {
+	margin: 0;
+	width: 100%;
+	height: 750%;
+	position: absolute;
+	top: 250%;
 	left: 0;
 	z-index: 4;
 }
@@ -62,7 +75,7 @@ body {
 	top: 380%;
 	left: 0;
 	z-index: 4;
-	background-image: url('../images/halftone2.png');
+	background-image: url('../images/halftone.png');
 	background-size: 100% auto;
 	background-attachment: absolute;
 	background-position: top left;
@@ -70,7 +83,7 @@ body {
 }
 
 #block2bg {
-	background-image: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	background-blend-mode: overlay;
 	margin: 0;
 	width: 100%;
@@ -81,7 +94,28 @@ body {
 	z-index: 2;
 }
 
-#block3 {
+
+#block2itemsfront {
+	margin: 0;
+	width: 100%;
+	height: 600%;
+	position: absolute;
+	top: 380%;
+	left: 0;
+	z-index: 6;
+}
+
+#block2itemsback {
+	margin: 0;
+	width: 100%;
+	height: 600%;
+	position: absolute;
+	top: 380%;
+	left: 0;
+	z-index: 3;
+}
+
+#block4 {
 	margin: 0;
 	width: 100%;
 	height: 100%;
@@ -106,10 +140,10 @@ body {
 }
 
 .rabbit {
-	width: 30rem;
-	float: right;
-	margin-right: -30%;
-	margin-left: 40px;
+	width: 80%;
+	margin-left: -70%;
+	margin-right: -20%;
+	float: left;
 
 }
 
@@ -118,10 +152,11 @@ body {
 #alice {
 	position: sticky;
 	position: -webkit-sticky;
-	top: 20%;
+	top: 25%;
 	margin: 5rem auto 25rem auto;
 	display: block;
-	width: 20rem;
+	width: 35%;
+	z-index: 1;
 
 }
 
@@ -135,53 +170,54 @@ body {
 }
 
 .rotating1 {
-    -webkit-animation: rotating 10s linear infinite;
+    -webkit-animation: rotating 20s linear infinite;
 }
 .rotating2 {
-    -webkit-animation: rotating 20s linear infinite;
+    -webkit-animation: rotating 30s linear infinite;
 }
 
 #cabinet {
 	position: absolute;
 	top: 55%;
-	left: 5%;
-	width: 25rem;
+	left: -8%;
+	width: 40rem;
 }
 
 
 #table {
 	position: absolute;
 	top: 25%;
-	right: 7%;
-	width: 15rem;
+	right: 3%;
+	width: 40%;
+	z-index: 3;
 }
 
 #clock {
 	position: absolute;
-	top: 35%;
-	right: 15%;
-	width: 20rem;
+	top: 45%;
+	right: 30%;
+	width: 12rem;
 }
 
 #flowers {
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	left: 25%;
-	width: 5rem;
+	width: 3rem;
 }
 
 #alice2 {
 	position: absolute;
 	bottom: 10%;
 	left: 10%;
-	width: 8rem;
+	width: 15%;
 }
 
 #drinkme {
 	position: absolute;
 	bottom: 10%;
 	left: 25%;
-	width: 4rem;
+	width: 10%;
 	cursor: pointer;
 }
 
@@ -189,8 +225,8 @@ body {
 #door {
 	position: absolute;
 	bottom: 10%;
-	right: 10%;
-	width: 6rem;
+	right: 12%;
+	width: 8%;
 	z-index: 3;
 }
 
@@ -198,7 +234,7 @@ body {
 	position: absolute;
 	bottom: 10%;
 	right: 8%;
-	width: 20rem;
+	width: 30%;
 	z-index: 1;
 }
 
@@ -227,12 +263,31 @@ body {
 	height: auto;
 }
 
-.firstcharacter {
-  font-family: 'Montesserat', sans-serif;
-  color: #688f98;
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 5px;
+#riverbank {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }
+
+#lazy {
+	position: absolute;
+	right: 0;
+	top:  5%;
+	width: 50%;
+}
+
+.ch1header {
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	width: 50%;
+}
+
+.ch1header img {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
+
