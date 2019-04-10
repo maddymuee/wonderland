@@ -3,6 +3,8 @@ $(document).ready(function(){
 
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.poem').addClass('fadein');
+     $('.ch6header h3').addClass('fadedown2');
   });
 
 
