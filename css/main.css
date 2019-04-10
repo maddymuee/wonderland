@@ -61,6 +61,7 @@ h3 {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 0;
+  opacity: 0;
 }
 
 .smallbottom {
@@ -320,4 +321,11 @@ h3 {
   animation-fill-mode: both;
   animation-name: fadeInDown;
   animation-delay: 1s;
+}
+
+
+.headerimg {
+  width: 100%;
+  margin-bottom: 0;
+  opacity: 0;
 }

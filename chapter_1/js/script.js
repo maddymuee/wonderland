@@ -1,9 +1,14 @@
 $(document).ready(function(){
 
 
+
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.headerimg').addClass('fadedown');
+     $('.ch1header h3').addClass('fadedown2');
   });
+
+
 
 let blink = false;
 $("#lazy").click(function(){  

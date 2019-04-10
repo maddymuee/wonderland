@@ -23,9 +23,13 @@ function parallaxIt(e, target, movement) {
 */
 
 
+
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.headerimg').addClass('fadedown');
+     $('.ch6header h3').addClass('fadedown2');
   });
+
   $('#decree').click(function(){
         $(this).attr('src', 'images/decreegif.gif');
     });

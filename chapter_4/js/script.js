@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
+
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.headerimg').addClass('fadedown');
+     $('.ch4header h3').addClass('fadedown2');
   });
+
 
 	$(window).load(function(){
      setTimeout(function() {

@@ -24,9 +24,13 @@ function parallaxIt(e, target, movement) {
 */
 
 
+
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.headerimg').addClass('fadedown');
+     $('.ch2header h3').addClass('fadedown2');
   });
+
 
 
 let clicked = false;
