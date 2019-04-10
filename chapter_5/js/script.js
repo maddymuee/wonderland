@@ -4,6 +4,7 @@ $(window).load(function() {
      $('#loading').fadeOut();
      $('.headerimg').addClass('fadedown');
      $('.ch5header h3').addClass('fadedown2');
+     $('.footsteps').addClass('footsteps2');
   });
 
 let clicked = false;
