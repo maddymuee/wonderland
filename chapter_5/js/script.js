@@ -12,14 +12,8 @@ let clicked = false;
     };
 });
 
-    $('#a2').on('click', function(){
-        $('#text').html('blarg');
-    }
-    );
-
-    $('#alice').on('click', function(){
-        $(this).addClass('grow');
-    }
-    );
+    $('.rabbit').hover(function(){
+        $(this).toggleClass('rabbit2');
+});
 
 });

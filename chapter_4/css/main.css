@@ -1,73 +1,29 @@
 body {
+	background-color: #eddab9;
+	margin: 0;
 	overflow-x: hidden;
-		background-color: #eddab9;
+	min-width: 700px;
 }
 
-#textbox1 {
-	position: absolute;
-	right: 10%;
-	bottom: 15%;
-	width: 30%;
-	overflow: auto;
-	background-color: #5f2c28;
-	padding: 1.5rem;
-	color: #eddab9;
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../images/gateopen.png');
 }
 
 #block1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 2% 0 2% 0;
-	box-sizing: border-box;
-
-}
-#block2 {
-	position: absolute;
-	top: 80%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-
-}
-
-#block3 {
 	margin: 0;
-	width: 100%;
-	height: 140%;
-	position: absolute;
-	top: 300%;
-	left: 0;
-}
+	padding-bottom: 40%;
+	position: relative;
+	z-index: 1;
 
-#table {
-	width: 80%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -40%;
 }
 
 
-
-#block4 {
-	margin: 0;
-	width: 100%;
-	height: 170%;
-	position: absolute;
-	top: 500%;
-	left: 0;
-}
 
 #fork {
 	position: absolute;
 	right: -15%;
-	top: 30%;
+	top: 35%;
 	width: 10%;
 	z-index: 2;
 	-moz-transition: 800ms ease-in-out;
@@ -121,12 +77,6 @@ body {
     -o-transform: rotate(-30deg);
  }
 
-#door {
-	position: absolute;
-	right: 0;
-	bottom: 5%;
-	width: 35rem;
-}
 
 
 #tablecloth {
@@ -137,22 +87,12 @@ body {
 	z-index: 0;
 }
 
-/*---WHAT??---*/
-
-.tablecloth {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 0;
-}
-
 .ch4header {
 	position: absolute;
 	top: 30%;
-	width: 46%;
+	width: 54%;
 	left: 50%;
-	margin-left: -23%;
+	margin-left: -27%;
 }
 
 .ch4header img {
@@ -160,10 +100,72 @@ body {
 }
 
 
-#gate {
-	width: 50%;
-	left: 50%;
-	bottom: 5%;
-	margin-left: -25%;
-	position: absolute;
+@media screen and (max-width: 900px) {
+	.ch4header h2 {
+		font-size: 1.3rem;
+		margin-top: -5%;
+	}
+}
+
+
+
+
+
+/*------BLOCK 2------*/
+
+
+#block2 {
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 10%;
+
+}
+
+#block3 {
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 10%;
+}
+
+#table {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+
+
+#block4 {
+	margin: 0;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.gate {
+	width: 50rem;
+	height: 45rem;
+	display: block;
+	margin: auto;
+	background-image:url('../images/gate.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gatehover {
+	background-image:url('../images/gateopen.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.gate {
+		width: 40rem;
+		height: 30rem;
+  }
 }

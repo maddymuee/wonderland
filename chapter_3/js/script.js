@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+/*
 
 $("#block1").mousemove(function(e) {
   parallaxIt(e, "#cat", -30);
@@ -18,17 +18,17 @@ function parallaxIt(e, target, movement) {
   });
 }
 
-
+*/
     var image = new Image();
-    let hovered = false;
-       image.src='images/disappearingcat2.gif';
-     $('#kitty').mouseover(function(){
-       if (hovered === false) {
-        $(this).attr('src',image.src);
+    let clicked = false;
+     $('#kitty').click(function(){
+       if (clicked === false) {
+        $(this).attr('src','images/disappearingcat2.gif');
         $(this).addClass('pointer');
-       hovered = true;
+       clicked = true;
    } else {
-    $(this).removeClass('pointer');
+    $(this).attr('src','images/disappearingcat.png');
+    clicked = false;
    }
  });
 

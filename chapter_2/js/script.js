@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
-
-$("#block2").mousemove(function(e) {
-  parallaxIt(e, "#flower1", -100);
+/*
+ $("#block1").mousemove(function(e) {
+  parallaxIt(e, "#flower1", -90);
   parallaxIt(e, "#flower2", -80);
   parallaxIt(e, "#alice", -50);
   parallaxIt(e, "#flower4", -30);
@@ -11,7 +10,7 @@ $("#block2").mousemove(function(e) {
 });
 
 function parallaxIt(e, target, movement) {
-  var $this = $("#block2");
+  var $this = $("#block1");
   var relX = e.pageX - $this.offset().left;
   var relY = e.pageY - $this.offset().top;
 
@@ -22,63 +21,45 @@ function parallaxIt(e, target, movement) {
 }
 
 
-/*
-
-var mushroom = ['images/cronch2.png','images/cronch3.png'];
-            var numLeft = 0
-            var numRight = 0
-
-
-$("#lefthand").click(function() {
-                document.getElementById('lefthand').src = mushroom[numLeft];
-                numLeft = numLeft + 1;
-                if (numLeft > 1) {
-                  numLeft = 1;
-                };
-            });
-
-$('#righthand').click(function() {
-                if (numLeft > 0) {
-                  document.getElementById('righthand').src = mushroom[numRight];
-                  numRight = numRight + 1;
-                } else {
-                  numRight = 0;
-                }
-                if (numRight > 0) {
-                  numRight = 0;
-                };
-                if (numLeft === 2 && numRight === 0) {
-                window.location = "../chapter_3/index.html";
-                };
-            });
-
-$('#righthand').mouseover(function() {
-    if ((numLeft === 2 && numRight === 1) || (numLeft === 3 && numRight === 2)) {
-      $(this).addClass('hover');
-      } else {
-        $(this).removeClass('hover');
-      };
-});
-
 */
 
 let clicked = false;
+
+
+$("#lefthand").hover(function(){
+  if (clicked === false) {
+    $(this).toggleClass("shake");
+    $(this).toggleClass("bigger");
+  }
+});
 
 $("#lefthand").click(function(){  
     $("#lefthand").attr("src", "images/cronch3.png");
     $("#lefthand").removeClass("pointer");
     $("#righthand").addClass("pointer");
+    $("#righthand").addClass("shake");
     clicked = true;
 });
 
+let clickedAgain = false;
+
+$("#righthand").hover(function(){
+  if ((clicked === true) && (clickedAgain === false)) {
+    $(this).toggleClass("shake");
+    $(this).toggleClass("bigger");
+  }
+});
+
 $("#righthand").click(function() {
-    if (clicked) {
-    $("#righthand").attr("src", "images/cronch2.png");
+    if (clicked === true) {
+      clickedAgain = true;
+    $(this).addClass("bigger");
+    $(this).attr("src", "images/cronch2.png");
     setTimeout(function() {
       window.location = "../chapter_3/index.html";
-      }, 1000);
+      }, 500);
     } else {
-      $("#righthand").attr("src", "images/cronch.png");
+      $(this).attr("src", "images/cronch.png");
     }
 });
 

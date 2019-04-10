@@ -18,4 +18,10 @@ function parallaxIt(e, target, movement) {
   });
 }
 
+
+$('.startover').hover(function(){
+          $(this).toggleClass('good');
+        });
+
+
 });

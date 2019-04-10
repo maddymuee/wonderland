@@ -14,5 +14,11 @@ $(document).ready(function(){
     }, 1400);
  });
 
+
+$(".gate").hover(function(){
+     $(this).toggleClass("gatehover");
+
+
 });
        
+       });
