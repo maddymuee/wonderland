@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
 
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
+
 $("#block1").mousemove(function(e) {
   parallaxIt(e, "#card1", -20);
   parallaxIt(e, "#card2", -20);

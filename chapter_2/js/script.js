@@ -23,6 +23,12 @@ function parallaxIt(e, target, movement) {
 
 */
 
+
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
+
+
 let clicked = false;
 
 

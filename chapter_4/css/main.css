@@ -101,7 +101,7 @@ body::after{
 
 
 @media screen and (max-width: 900px) {
-	.ch4header h2 {
+	.ch4header h3 {
 		font-size: 1.3rem;
 		margin-top: -5%;
 	}

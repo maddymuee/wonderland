@@ -19,6 +19,11 @@ function parallaxIt(e, target, movement) {
 }
 
 */
+
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
+  
     var image = new Image();
     let clicked = false;
      $('#kitty').click(function(){

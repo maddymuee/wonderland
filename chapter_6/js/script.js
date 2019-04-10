@@ -21,6 +21,11 @@ function parallaxIt(e, target, movement) {
 }
 
 */
+
+
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
   $('#decree').click(function(){
         $(this).attr('src', 'images/decreegif.gif');
     });

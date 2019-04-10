@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
+
 	$(window).load(function(){
      setTimeout(function() {
           $('#knife').addClass('rotate1');

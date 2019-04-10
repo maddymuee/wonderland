@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
+
+
 $('.title').fadeOut(0);
 
 $('.heart').fadeOut(0).delay(2500).fadeIn(2000);

@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+$(window).load(function() {
+     $('#loading').fadeOut();
+  });
 
 let clicked = false;
 	$('#aliceflamingo').click(function(){
