@@ -54,6 +54,55 @@ body::after{
 }
 
 
+.slideright1 {
+ -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: slideRight;
+  animation-delay: 1.2s;
+}
+
+.slideright2 {
+ -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: slideRight;
+  animation-delay: 1.4s;
+}
+
+@keyframes slideRight {
+   0% {
+      transform: translateX(-100%);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+.slideleft {
+ -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: slideLeft;
+  animation-delay: 1.5s;
+}
+
+@keyframes slideLeft {
+   0% {
+      transform: translateX(100%);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+} 
+
+
+
 @media only screen and (max-width: 1350px) {
 	.ch6header h3 {
 		font-size: 1.3rem;
