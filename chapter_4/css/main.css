@@ -7,7 +7,7 @@ body {
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url('../images/gateopen.png');
+    content:url('../images/gateopen.jpg');
 }
 
 #block1 {
@@ -150,14 +150,14 @@ body::after{
 	height: 45rem;
 	display: block;
 	margin: auto;
-	background-image:url('../images/gate.png');
+	background-image:url('../images/gate.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .gatehover {
-	background-image:url('../images/gateopen.png');
+	background-image:url('../images/gateopen.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }

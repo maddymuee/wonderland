@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+$(window).load(function() {
+     $('#loading').hide();
+  });
 
 let blink = false;
 $("#lazy").click(function(){  

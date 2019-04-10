@@ -34,7 +34,7 @@ $("#lefthand").hover(function(){
 });
 
 $("#lefthand").click(function(){  
-    $("#lefthand").attr("src", "images/cronch3.png");
+    $("#lefthand").attr("src", "images/cronch3.jpg");
     $("#lefthand").removeClass("pointer");
     $("#righthand").addClass("pointer");
     $("#righthand").addClass("shake");
@@ -54,12 +54,12 @@ $("#righthand").click(function() {
     if (clicked === true) {
       clickedAgain = true;
     $(this).addClass("bigger");
-    $(this).attr("src", "images/cronch2.png");
+    $(this).attr("src", "images/cronch2.jpg");
     setTimeout(function() {
       window.location = "../chapter_3/index.html";
       }, 500);
     } else {
-      $(this).attr("src", "images/cronch.png");
+      $(this).attr("src", "images/cronch.jpg");
     }
 });
 

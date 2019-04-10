@@ -134,7 +134,7 @@ html, body {
 	margin-top: -40rem;
 	padding-top: 20rem;
 	overflow: hidden;
-    background-image: url('../images/caterpillar.png');
+    background-image: url('../images/caterpillar.jpg');
     background-position: bottom right;
     background-size: 80% auto;
     background-repeat: no-repeat;
@@ -145,6 +145,14 @@ html, body {
   position: relative;
 }
 
+#whoareyou {
+  width: 30rem;
+  height: 10rem;
+  background-image: url('../images/whoareyou.gif');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .caterpillar {
 	float: right;
   margin-left: 5%;
@@ -189,10 +197,13 @@ html, body {
   	display: none;
   }
   #block3 {
-  	background-image: url('../images/caterpillar2.png');
+  	background-image: url('../images/caterpillar2.jpg');
     background-position: bottom center;
     background-size: 100% auto;
     padding-bottom: 80%;
+  }
+  #whoareyou {
+    background-image: url('../images/whoareyou.png');
   }
   }
 
@@ -237,3 +248,7 @@ html, body {
   70% { transform: rotate(1deg); }
 }
 
+@media only screen and (max-width: 900px) {
+    #lefthand, #righthand {
+    margin-top: 0;
+  }
