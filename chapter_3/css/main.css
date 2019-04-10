@@ -9,7 +9,7 @@ body, html {
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url('../images/hatter2.png') url('../images/hare2.png');
+    content:url('../images/hatter2.png') url('../images/hare2.png') url('../images/disappearingcat2.gif');
 }
 
 #block1 {

@@ -6,6 +6,11 @@ body {
 	height: 100%;
 }
 
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../images/startover2.png');
+}
+
 #block1 {
 	background: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	background-blend-mode: overlay;

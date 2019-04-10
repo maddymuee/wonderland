@@ -7,7 +7,7 @@ body {
 
 		body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url('../images/rabbit2.png') url('../images/flamingo2.png');
+    content:url('../images/rabbit2.jpg') url('../images/flamingo2.png');
 }
 
 
