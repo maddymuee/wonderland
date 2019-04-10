@@ -24,7 +24,7 @@ a:hover {
 	display: block;
     margin: auto;
     width: 40%;
-    z-index: 400;
+    z-index: 98;
     min-width: 30rem;
 }
 
@@ -33,14 +33,14 @@ a:hover {
     margin: 0 0 0 10rem;
     width: 40%;
     min-width: 30rem;
-    z-index: 400;
+    z-index: 98;
 }
 
 .blocktextright {
 	display: block;
     margin: 5rem 0 0 40%;
     width: 40%;
-    z-index: 400;
+    z-index: 98;
     min-width: 30rem;
 }
 
@@ -48,7 +48,7 @@ a:hover {
   margin: 0 0 0 50%;
   display: block;
     width: 40%;
-    z-index: 400;
+    z-index: 98;
 }
 
 
