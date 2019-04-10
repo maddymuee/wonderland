@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $(window).load(function() {
-     $('#loading').hide();
+     $('#loading').fadeOut();
   });
 
 let blink = false;

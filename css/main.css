@@ -299,6 +299,11 @@ h4 {
 }
 
 
+.pulse2 {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 
 .nav li ul li.yeet {
 	background-color: #da2b3a;/*
