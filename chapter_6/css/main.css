@@ -7,7 +7,7 @@ body {
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url('../images/decree.gif');
+    content:url('../images/decreegif.gif');
 }
 
 #block1 {
