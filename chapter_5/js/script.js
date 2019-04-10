@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 $(window).load(function() {
      $('#loading').fadeOut();
+     $('.headerimg').addClass('fadedown');
+     $('.ch5header h3').addClass('fadedown2');
   });
 
 let clicked = false;
