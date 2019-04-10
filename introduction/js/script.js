@@ -4,13 +4,14 @@ $(document).ready(function(){
 $(window).load(function() {
      $('#loading').fadeOut();
      $('.poem').addClass('fadein');
+     $('.heart').fadeOut(0).delay(2500).fadeIn(2000);
      $('.ch6header h3').addClass('fadedown2');
   });
 
 
 $('.title').fadeOut(0);
 
-$('.heart').fadeOut(0).delay(2500).fadeIn(2000);
+
 
 
 let clicked = false;
