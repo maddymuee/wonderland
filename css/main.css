@@ -275,7 +275,7 @@ h3 {
    position: fixed;
    display: block;
    background-color: #eddab9;
-   z-index: 99;
+   z-index: 98;
    text-align: center;
    padding-top: 15%;
    font-size: 2.3rem;
@@ -328,4 +328,35 @@ h3 {
   width: 100%;
   margin-bottom: 0;
   opacity: 0;
+}
+
+.mobile {
+	width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: none;
+   background-color: #eddab9;
+   z-index: 99;
+   cursor: default;
+}
+
+.mobiletext {
+	display: block;
+	margin: auto;
+   text-align: center;
+   width: 70%;
+   padding-top: 15%;
+}
+
+.dr1nkm3 {
+	width: 50%;
+	padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+	.mobile {
+		display: block;
+	}
 }
