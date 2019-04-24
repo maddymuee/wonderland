@@ -144,8 +144,21 @@ body {
 	padding-bottom: 30vh;
 	position: relative;
 	z-index: 3;
-	background: url('../../chapter_1/images/bw.jpg'), #a4cbc8; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+@supports (background-blend-mode: overlay) {
+  #block4 {
+    background: url('../../chapter_1/images/bw.jpg'), #a4cbc8; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	background-blend-mode: overlay;
+}
+}
+
+
+@supports not (background-blend-mode: overlay) {
+  #block4 {
+  	background-color: #a4cbc8; 
+  }
 }
 
 

@@ -99,10 +99,22 @@ body, html {
 	margin: 0;
 	height: 600vh;
 	position: relative;
-	background: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	background-blend-mode: overlay;
 	border-top: 50rem solid #eddab9;
 	z-index: 1;
+}
+
+@supports (background-blend-mode: overlay) {
+  #block3 {
+    background-blend-mode: overlay;
+    background: url('../images/bw.jpg'), linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+
+
+@supports not (background-blend-mode: overlay) {
+  #block3 {
+  	background: linear-gradient(to bottom, #e0b549 0%,#da2b3a 100%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
 }
 
 
